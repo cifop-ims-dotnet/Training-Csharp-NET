@@ -11,6 +11,10 @@ namespace DateTimeLab
     {
         static void Main(string[] args)
         {
+            var dateTime = new DateTime(2015, 1, 1);
+            dateTime.AddYears(1);
+            Console.WriteLine(dateTime.Year);
+
             var demoDate = new DateTime(2019, 11, 24);
             var now = DateTime.Now;
             var today = DateTime.Today;
