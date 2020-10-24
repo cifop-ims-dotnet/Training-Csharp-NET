@@ -20,7 +20,6 @@ namespace SealedLabs
 
     public class CustomCircle : Circle
     {
-        
     }
     class Program
     {

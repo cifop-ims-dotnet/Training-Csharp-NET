@@ -12,28 +12,29 @@ namespace PolymorphismLabs
         {
             BaseClass bc = new BaseClass();
             DerivedClass dc = new DerivedClass();
-            BaseClass bcdc = new DerivedClass();
+            BaseClass bcdc = new DerivedClass(); //UpCasting
 
             // The following two calls do what you would expect. They call  
             // the methods that are defined in BaseClass.  
             bc.Method1();
             bc.Method2();
             // Output:  
-
-
+            //Base - Method1
+            //Base - Method2
             // The following two calls do what you would expect. They call  
             // the methods that are defined in DerivedClass.  
             dc.Method1();
             dc.Method2();
             // Output:  
-
-
+            // Derived - Method1
+            // Derived - Method2
             // The following two calls produce different results, depending   
             // on whether override (Method1) or new (Method2) is used.  
             bcdc.Method1();
             bcdc.Method2();
             // Output:  
-
+            //Base - Method1
+            //Derived - Method2
         }
     }
 

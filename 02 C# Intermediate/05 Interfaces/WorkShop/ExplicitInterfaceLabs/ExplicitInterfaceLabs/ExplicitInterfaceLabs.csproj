@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{41D4A2CB-311D-4E80-AE2E-22D1F2108AA9}</ProjectGuid>
+    <ProjectGuid>{9D2A6718-FADA-40F0-88E4-4B5B9047E9F7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OverrrideObjectLabs</RootNamespace>
-    <AssemblyName>OverrrideObjectLabs</AssemblyName>
+    <RootNamespace>ExplicitInterfaceLabs</RootNamespace>
+    <AssemblyName>ExplicitInterfaceLabs</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Circle.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="Point.cs" />
+    <Compile Include="ILeft.cs" />
+    <Compile Include="IRight.cs" />
+    <Compile Include="MoveableOject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Shape.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

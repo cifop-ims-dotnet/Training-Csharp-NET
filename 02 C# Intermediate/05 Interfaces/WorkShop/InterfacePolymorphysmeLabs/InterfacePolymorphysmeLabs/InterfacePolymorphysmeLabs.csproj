@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{41D4A2CB-311D-4E80-AE2E-22D1F2108AA9}</ProjectGuid>
+    <ProjectGuid>{0B4A06BC-1ABF-46F5-9E1A-C2BF353FAE2E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OverrrideObjectLabs</RootNamespace>
-    <AssemblyName>OverrrideObjectLabs</AssemblyName>
+    <RootNamespace>InterfacePolymorphysmeLabs</RootNamespace>
+    <AssemblyName>InterfacePolymorphysmeLabs</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Circle.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="Point.cs" />
+    <Compile Include="INotifyService.cs" />
+    <Compile Include="Mail.cs" />
+    <Compile Include="MailService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Shape.cs" />
+    <Compile Include="SmsService.cs" />
+    <Compile Include="Video.cs" />
+    <Compile Include="VideoEncoder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
