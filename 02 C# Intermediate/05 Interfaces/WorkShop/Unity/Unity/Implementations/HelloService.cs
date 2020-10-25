@@ -11,4 +11,12 @@ namespace Unity.Implementations
             Console.WriteLine("Hello !");
         }
     }
+
+    public class HelloServiceV2 : IHelloService
+    {
+        public void SayHello()
+        {
+            Console.WriteLine("Hello !!!!");
+        }
+    }
 }

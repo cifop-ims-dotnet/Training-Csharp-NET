@@ -12,9 +12,12 @@ namespace Unity
         static void Main(string[] args)
         {
             var unityContainer = new UnityContainer();
+
             var container = new Container(unityContainer);
             container.RegisterTypes();
+
             var shell = unityContainer.Resolve<IShell>();
+            var shell2 = unityContainer.Resolve<IShell>();
             shell.Start();
         }
     }

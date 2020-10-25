@@ -14,6 +14,7 @@ namespace Unity
 
         public void RegisterTypes()
         {
+            _unityContainer.RegisterType<IHelloService, HelloServiceV2>("v2");
             _unityContainer.RegisterType<IHelloService, HelloService>();
             _unityContainer.RegisterType<IGreetingService, GreetingService>();
             _unityContainer.RegisterType<IShell, Shell>();
